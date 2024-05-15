@@ -12,11 +12,11 @@ namespace AoC_2023_04
 
         public Card(string row) {
             string[] lrSegments = row.Split('|');
-            string[] lhandStringRaw = lrSegments[0].Split(':');
-            string cardNumberSectionString = lhandStringRaw[0];
-            string cardNumberString = cardNumberSectionString.Split(' ')[1];
-            string[] winningNumberStrings = lhandStringRaw[1].Split(' ');
-            string[] ownedNumberStrings = lrSegments[1].Split(' ');
+            string[] lhandStringRaw = lrSegments.First().Split(':');
+            string cardNumberSectionString = lhandStringRaw.First();
+            string cardNumberString = cardNumberSectionString.Split(' ').Last();
+            string[] winningNumberStrings = lhandStringRaw.Last().Split(' ');
+            string[] ownedNumberStrings = lrSegments.Last().Split(' ');
 
             cardNumber = int.Parse(cardNumberString);
             winningNumbers = winningNumberStrings

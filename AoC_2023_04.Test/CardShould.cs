@@ -36,5 +36,16 @@
             Card card = new(row);
             Assert.Equal(expected, card.CardScore());
         }
+
+        [Theory]
+        [InlineData("Card 2: 13 32 20 16 61 | 61 30 68 82 17 32 24 19", 2)]
+        [InlineData("Card  4: 41 92 73 84 69 | 59 84 76 51 58  5 54 83", 1)]
+        [InlineData("Card    6: 31 18 13 56 72 | 74 77 10 23 35 67 36 11", 0)]
+        public void ConstructRegardlessOfLeadingSpacesInCardNumber(string row, int expected)
+        {
+            Card _ = new(row);
+            Assert.True(true);
+        }
+
     }
 }

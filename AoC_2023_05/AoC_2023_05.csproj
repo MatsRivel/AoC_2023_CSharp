@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C07ADBBE-D5B6-4433-961A-7A1130987F6C}</ProjectGuid>
+    <ProjectGuid>{9CEC7717-A1DA-477F-B014-F9BF99BE0D3E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AoC_2023_04</RootNamespace>
-    <AssemblyName>AoC_2023_04</AssemblyName>
+    <RootNamespace>AoC_2023_05</RootNamespace>
+    <AssemblyName>AoC_2023_05</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Card.cs" />
+    <Compile Include="GroupManager.cs" />
+    <Compile Include="Mapping.cs" />
+    <Compile Include="MapGroup.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScratchCard.cs" />
-    <Compile Include="ScratchManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

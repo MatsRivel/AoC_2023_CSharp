@@ -1,6 +1,6 @@
 namespace AoC_2023_04.Test
 {
-    public class ScratchCardsShould
+    public class ScratchCardShould
     {
         public static string AddFileNameToDirPath(string fileName)
         {
@@ -30,6 +30,7 @@ namespace AoC_2023_04.Test
         }
         [Theory]
         [InlineData("TestInput_Minimal.txt",2)]
+        [InlineData("TestInput_Small.txt", 2)]
         [InlineData("TestInput.txt", 13)]
         public void GetCorrectScoreTotal(string fileName, int expectedScore)
         {
@@ -38,5 +39,6 @@ namespace AoC_2023_04.Test
             Assert.Equal(expectedScore, scratch.CalculateScore());
 
         }
+
     }
 }

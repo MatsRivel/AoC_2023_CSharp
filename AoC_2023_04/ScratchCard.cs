@@ -16,7 +16,7 @@ namespace AoC_2023_04
            lines = File.ReadAllLines(path).ToList();
 
             return lines;
-        }
+        }   
 
         public int CalculateScore()
         {
